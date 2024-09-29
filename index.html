@@ -21,16 +21,16 @@
       >
         Meal Prep Kits
       </h1>
-      <div class="flex justify-center">
+      <div class="flex justify-center overflow-hidden px-20 py-8">
         <img
           src="./Jotform/Proteins.png"
           alt="Small Image"
-          class="block md:hidden h-[25rem] w-auto rounded-2xl mb-10"
+          class="block md:hidden h-[25rem] w-auto sm:w-[30rem] sm:h-[30rem] rounded-2xl mb-10"
         />
         <img
           src="./Jotform/MK Landscape Graphic.png"
           alt="Large Image"
-          class="hidden md:block h-[35rem] w-auto rounded-2xl mb-10"
+          class="hidden md:block h-auto w-auto rounded-2xl mb-10"
         />
       </div>
     </div>
@@ -48,7 +48,7 @@
           />
         </div>
         <div
-          class="pb-10 lg:w-2/3 md:flex md:flex-col md:p-4 md:gap-8 md:justify-center"
+          class="pb-10 lg:w-2/3 md:flex md:flex-col md:p-4 md:pb-10 md:gap-8 md:justify-center"
         >
           <h2 class="text-xl font-semibold text-center">
             Customize Your Bowl
@@ -57,7 +57,7 @@
           <div
             class="md:flex md:flex-row md:justify-center gap-[4rem] lg:gap-[1rem] xl:gap-[4rem]"
           >
-            <div class="ml-8 lg:ml-4 mt-4">
+            <div class="ml-8 sm:ml-8 xl:ml-8 lg:ml-4 mt-4">
               <h1 class="font-semibold mb-2">Protein</h1>
               <form class="text-base">
                 <input
@@ -118,7 +118,7 @@
                 <label for="Strip">New York Strip Steak</label><br />
               </form>
             </div>
-            <div class="ml-8 lg:ml-4 mt-4">
+            <div class="ml-8 sm:ml-8 xl:ml-8 lg:ml-4 mt-4">
               <h1 class="font-semibold mb-2">Vegetables</h1>
               <form class="text-base">
                 <input
@@ -163,7 +163,7 @@
                 <label for="Spinach">Spinach</label><br />
               </form>
             </div>
-            <div class="ml-8 lg:ml-4 mt-4">
+            <div class="ml-8 sm:ml-8 xl:ml-8 lg:ml-4 mt-4">
               <h1 class="font-semibold mb-2">Carbs</h1>
               <form class="text-base">
                 <input
@@ -210,7 +210,9 @@
             </div>
           </div>
           <div class="mt-6 text-center">
-            <div class="flex flex-row gap-8 justify-center">
+            <div
+              class="flex flex-row gap-3 ml-8 sm:ml-8 sm:gap-8 md:ml-0 justify-start md:justify-center"
+            >
               <label class="font-semibold"> Quantity </label>
               <div class="flex items-center">
                 <button
@@ -219,13 +221,32 @@
                 >
                   -
                 </button>
-                <input
-                  type="number"
-                  id="quantity"
-                  class="w-16 border text-center"
-                  value="1"
-                  min="1"
-                />
+                <select
+                  id="quantity2"
+                  class="w-[8rem] sm:w-[10rem] bg-white border border-gray-300 focus:outline-none focus:border-blue-500"
+                >
+                  <option value="" disabled selected>Please Select</option>
+                  <option value="option1">1</option>
+                  <option value="option2">2</option>
+                  <option value="option3">3</option>
+                  <option value="option4">4</option>
+                  <option value="option5">5</option>
+                  <option value="option6">6</option>
+                  <option value="option7">7</option>
+                  <option value="option8">8</option>
+                  <option value="option9">9</option>
+                  <option value="option10">10</option>
+                  <option value="option11">11</option>
+                  <option value="option12">12</option>
+                  <option value="option13">13</option>
+                  <option value="option14">14</option>
+                  <option value="option15">15</option>
+                  <option value="option16">16</option>
+                  <option value="option17">17</option>
+                  <option value="option18">18</option>
+                  <option value="option19">19</option>
+                  <option value="option20">20</option>
+                </select>
                 <button
                   id="increase"
                   class="bg-blue-500 text-white rounded-r px-4"
@@ -249,7 +270,7 @@
           />
         </div>
         <div
-          class="pb-10 lg:w-2/3 md:flex md:flex-col md:p-4 md:gap-8 md:justify-center"
+          class="pb-10 lg:w-2/3 md:flex md:flex-col md:p-4 md:pb-10 md:gap-8 md:justify-center"
         >
           <h2 class="text-xl font-semibold text-center">
             Customize Your Bowl
@@ -258,7 +279,7 @@
           <div
             class="md:flex md:flex-row md:justify-center gap-[4rem] lg:gap-[1rem] xl:gap-[4rem]"
           >
-            <div class="ml-8 lg:ml-4 mt-4">
+            <div class="ml-8 sm:ml-8 xl:ml-8 lg:ml-4 mt-4">
               <h1 class="font-semibold mb-2">Protein</h1>
               <form class="text-base">
                 <input
@@ -319,7 +340,7 @@
                 <label for="Strip">New York Strip Steak</label><br />
               </form>
             </div>
-            <div class="ml-8 lg:ml-4 mt-4">
+            <div class="ml-8 sm:ml-8 xl:ml-8 lg:ml-4 mt-4">
               <h1 class="font-semibold mb-2">Vegetables</h1>
               <form class="text-base">
                 <input
@@ -364,7 +385,7 @@
                 <label for="Spinach">Spinach</label><br />
               </form>
             </div>
-            <div class="ml-8 lg:ml-4 mt-4">
+            <div class="ml-8 sm:ml-8 xl:ml-8 lg:ml-4 mt-4">
               <h1 class="font-semibold mb-2">Carbs</h1>
               <form class="text-base">
                 <input
@@ -411,7 +432,9 @@
             </div>
           </div>
           <div class="mt-6 text-center">
-            <div class="flex flex-row gap-8 justify-center">
+            <div
+              class="flex flex-row gap-3 ml-8 sm:ml-8 sm:gap-8 md:ml-0 justify-start md:justify-center"
+            >
               <label class="font-semibold"> Quantity </label>
               <div class="flex items-center">
                 <button
@@ -420,13 +443,32 @@
                 >
                   -
                 </button>
-                <input
-                  type="number"
-                  id="quantity"
-                  class="w-16 border text-center"
-                  value="1"
-                  min="1"
-                />
+                <select
+                  id="quantity2"
+                  class="w-[8rem] sm:w-[10rem] bg-white border border-gray-300 focus:outline-none focus:border-blue-500"
+                >
+                  <option value="" disabled selected>Please Select</option>
+                  <option value="option1">1</option>
+                  <option value="option2">2</option>
+                  <option value="option3">3</option>
+                  <option value="option4">4</option>
+                  <option value="option5">5</option>
+                  <option value="option6">6</option>
+                  <option value="option7">7</option>
+                  <option value="option8">8</option>
+                  <option value="option9">9</option>
+                  <option value="option10">10</option>
+                  <option value="option11">11</option>
+                  <option value="option12">12</option>
+                  <option value="option13">13</option>
+                  <option value="option14">14</option>
+                  <option value="option15">15</option>
+                  <option value="option16">16</option>
+                  <option value="option17">17</option>
+                  <option value="option18">18</option>
+                  <option value="option19">19</option>
+                  <option value="option20">20</option>
+                </select>
                 <button
                   id="increase"
                   class="bg-blue-500 text-white rounded-r px-4"
@@ -438,6 +480,7 @@
           </div>
         </div>
       </div>
+
       <!--Bowl3-->
       <div
         class="flex flex-col gap-4 rounded-2xl m-4 lg:flex-row bg-white shadow-xl xl:m-12 md:mb-20"
@@ -449,7 +492,7 @@
           />
         </div>
         <div
-          class="pb-10 lg:w-2/3 md:flex md:flex-col md:p-4 md:gap-8 md:justify-center"
+          class="pb-10 lg:w-2/3 md:flex md:flex-col md:p-4 md:pb-10 md:gap-8 md:justify-center"
         >
           <h2 class="text-xl font-semibold text-center">
             Customize Your Bowl
@@ -458,7 +501,7 @@
           <div
             class="md:flex md:flex-row md:justify-center gap-[4rem] lg:gap-[1rem] xl:gap-[4rem]"
           >
-            <div class="ml-8 lg:ml-4 mt-4">
+            <div class="ml-8 sm:ml-8 xl:ml-8 lg:ml-4 mt-4">
               <h1 class="font-semibold mb-2">Protein</h1>
               <form class="text-base">
                 <input
@@ -519,7 +562,7 @@
                 <label for="Strip">New York Strip Steak</label><br />
               </form>
             </div>
-            <div class="ml-8 lg:ml-4 mt-4">
+            <div class="ml-8 sm:ml-8 xl:ml-8 lg:ml-4 mt-4">
               <h1 class="font-semibold mb-2">Vegetables</h1>
               <form class="text-base">
                 <input
@@ -564,7 +607,7 @@
                 <label for="Spinach">Spinach</label><br />
               </form>
             </div>
-            <div class="ml-8 lg:ml-4 mt-4">
+            <div class="ml-8 sm:ml-8 xl:ml-8 lg:ml-4 mt-4">
               <h1 class="font-semibold mb-2">Carbs</h1>
               <form class="text-base">
                 <input
@@ -611,7 +654,9 @@
             </div>
           </div>
           <div class="mt-6 text-center">
-            <div class="flex flex-row gap-8 justify-center">
+            <div
+              class="flex flex-row gap-3 ml-8 sm:ml-8 sm:gap-8 md:ml-0 justify-start md:justify-center"
+            >
               <label class="font-semibold"> Quantity </label>
               <div class="flex items-center">
                 <button
@@ -620,13 +665,32 @@
                 >
                   -
                 </button>
-                <input
-                  type="number"
-                  id="quantity"
-                  class="w-16 border text-center"
-                  value="1"
-                  min="1"
-                />
+                <select
+                  id="quantity2"
+                  class="w-[8rem] sm:w-[10rem] bg-white border border-gray-300 focus:outline-none focus:border-blue-500"
+                >
+                  <option value="" disabled selected>Please Select</option>
+                  <option value="option1">1</option>
+                  <option value="option2">2</option>
+                  <option value="option3">3</option>
+                  <option value="option4">4</option>
+                  <option value="option5">5</option>
+                  <option value="option6">6</option>
+                  <option value="option7">7</option>
+                  <option value="option8">8</option>
+                  <option value="option9">9</option>
+                  <option value="option10">10</option>
+                  <option value="option11">11</option>
+                  <option value="option12">12</option>
+                  <option value="option13">13</option>
+                  <option value="option14">14</option>
+                  <option value="option15">15</option>
+                  <option value="option16">16</option>
+                  <option value="option17">17</option>
+                  <option value="option18">18</option>
+                  <option value="option19">19</option>
+                  <option value="option20">20</option>
+                </select>
                 <button
                   id="increase"
                   class="bg-blue-500 text-white rounded-r px-4"
@@ -649,7 +713,7 @@
           />
         </div>
         <div
-          class="pb-10 lg:w-2/3 md:flex md:flex-col md:p-4 md:gap-8 md:justify-center"
+          class="pb-10 lg:w-2/3 md:flex md:flex-col md:p-4 md:pb-10 md:gap-8 md:justify-center"
         >
           <h2 class="text-xl font-semibold text-center">
             Customize Your Bowl
@@ -658,7 +722,7 @@
           <div
             class="md:flex md:flex-row md:justify-center gap-[4rem] lg:gap-[1rem] xl:gap-[4rem]"
           >
-            <div class="ml-8 lg:ml-4 mt-4">
+            <div class="ml-8 sm:ml-8 xl:ml-8 lg:ml-4 mt-4">
               <h1 class="font-semibold mb-2">Protein</h1>
               <form class="text-base">
                 <input
@@ -719,7 +783,7 @@
                 <label for="Strip">New York Strip Steak</label><br />
               </form>
             </div>
-            <div class="ml-8 lg:ml-4 mt-4">
+            <div class="ml-8 sm:ml-8 xl:ml-8 lg:ml-4 mt-4">
               <h1 class="font-semibold mb-2">Vegetables</h1>
               <form class="text-base">
                 <input
@@ -764,7 +828,7 @@
                 <label for="Spinach">Spinach</label><br />
               </form>
             </div>
-            <div class="ml-8 lg:ml-4 mt-4">
+            <div class="ml-8 sm:ml-8 xl:ml-8 lg:ml-4 mt-4">
               <h1 class="font-semibold mb-2">Carbs</h1>
               <form class="text-base">
                 <input
@@ -811,7 +875,9 @@
             </div>
           </div>
           <div class="mt-6 text-center">
-            <div class="flex flex-row gap-8 justify-center">
+            <div
+              class="flex flex-row gap-3 ml-8 sm:ml-8 sm:gap-8 md:ml-0 justify-start md:justify-center"
+            >
               <label class="font-semibold"> Quantity </label>
               <div class="flex items-center">
                 <button
@@ -820,13 +886,32 @@
                 >
                   -
                 </button>
-                <input
-                  type="number"
-                  id="quantity"
-                  class="w-16 border text-center"
-                  value="1"
-                  min="1"
-                />
+                <select
+                  id="quantity2"
+                  class="w-[8rem] sm:w-[10rem] bg-white border border-gray-300 focus:outline-none focus:border-blue-500"
+                >
+                  <option value="" disabled selected>Please Select</option>
+                  <option value="option1">1</option>
+                  <option value="option2">2</option>
+                  <option value="option3">3</option>
+                  <option value="option4">4</option>
+                  <option value="option5">5</option>
+                  <option value="option6">6</option>
+                  <option value="option7">7</option>
+                  <option value="option8">8</option>
+                  <option value="option9">9</option>
+                  <option value="option10">10</option>
+                  <option value="option11">11</option>
+                  <option value="option12">12</option>
+                  <option value="option13">13</option>
+                  <option value="option14">14</option>
+                  <option value="option15">15</option>
+                  <option value="option16">16</option>
+                  <option value="option17">17</option>
+                  <option value="option18">18</option>
+                  <option value="option19">19</option>
+                  <option value="option20">20</option>
+                </select>
                 <button
                   id="increase"
                   class="bg-blue-500 text-white rounded-r px-4"
@@ -838,6 +923,7 @@
           </div>
         </div>
       </div>
+
       <!--Bowl5-->
       <div
         class="flex flex-col gap-4 rounded-2xl m-4 lg:flex-row bg-white shadow-xl xl:m-12 md:mb-20"
@@ -849,7 +935,7 @@
           />
         </div>
         <div
-          class="pb-10 lg:w-2/3 md:flex md:flex-col md:p-4 md:gap-8 md:justify-center"
+          class="pb-10 lg:w-2/3 md:flex md:flex-col md:p-4 md:pb-10 md:gap-8 md:justify-center"
         >
           <h2 class="text-xl font-semibold text-center">
             Customize Your Bowl
@@ -858,7 +944,7 @@
           <div
             class="md:flex md:flex-row md:justify-center gap-[4rem] lg:gap-[1rem] xl:gap-[4rem]"
           >
-            <div class="ml-8 lg:ml-4 mt-4">
+            <div class="ml-8 sm:ml-8 xl:ml-8 lg:ml-4 mt-4">
               <h1 class="font-semibold mb-2">Protein</h1>
               <form class="text-base">
                 <input
@@ -919,7 +1005,7 @@
                 <label for="Strip">New York Strip Steak</label><br />
               </form>
             </div>
-            <div class="ml-8 lg:ml-4 mt-4">
+            <div class="ml-8 sm:ml-8 xl:ml-8 lg:ml-4 mt-4">
               <h1 class="font-semibold mb-2">Vegetables</h1>
               <form class="text-base">
                 <input
@@ -964,7 +1050,7 @@
                 <label for="Spinach">Spinach</label><br />
               </form>
             </div>
-            <div class="ml-8 lg:ml-4 mt-4">
+            <div class="ml-8 sm:ml-8 xl:ml-8 lg:ml-4 mt-4">
               <h1 class="font-semibold mb-2">Carbs</h1>
               <form class="text-base">
                 <input
@@ -1011,7 +1097,9 @@
             </div>
           </div>
           <div class="mt-6 text-center">
-            <div class="flex flex-row gap-8 justify-center">
+            <div
+              class="flex flex-row gap-3 ml-8 sm:ml-8 sm:gap-8 md:ml-0 justify-start md:justify-center"
+            >
               <label class="font-semibold"> Quantity </label>
               <div class="flex items-center">
                 <button
@@ -1020,13 +1108,32 @@
                 >
                   -
                 </button>
-                <input
-                  type="number"
-                  id="quantity"
-                  class="w-16 border text-center"
-                  value="1"
-                  min="1"
-                />
+                <select
+                  id="quantity2"
+                  class="w-[8rem] sm:w-[10rem] bg-white border border-gray-300 focus:outline-none focus:border-blue-500"
+                >
+                  <option value="" disabled selected>Please Select</option>
+                  <option value="option1">1</option>
+                  <option value="option2">2</option>
+                  <option value="option3">3</option>
+                  <option value="option4">4</option>
+                  <option value="option5">5</option>
+                  <option value="option6">6</option>
+                  <option value="option7">7</option>
+                  <option value="option8">8</option>
+                  <option value="option9">9</option>
+                  <option value="option10">10</option>
+                  <option value="option11">11</option>
+                  <option value="option12">12</option>
+                  <option value="option13">13</option>
+                  <option value="option14">14</option>
+                  <option value="option15">15</option>
+                  <option value="option16">16</option>
+                  <option value="option17">17</option>
+                  <option value="option18">18</option>
+                  <option value="option19">19</option>
+                  <option value="option20">20</option>
+                </select>
                 <button
                   id="increase"
                   class="bg-blue-500 text-white rounded-r px-4"
@@ -1050,119 +1157,228 @@
 
       <!--Soft Eggs-->
       <div
-        class="flex flex-col gap-4 rounded-2xl m-4 bg-white shadow-xl lg:flex-row xl:m-12 md:mb-20"
+        class="flex flex-col gap-4 rounded-2xl m-4 lg:flex-row bg-white shadow-xl xl:m-12 md:mb-20"
       >
         <div class="rounded-2xl overflow-hidden px-8 py-8 lg:p-4">
           <img
             src="./Jotform/Soft Boiled Eggs.PNG"
-            class="h-50 mx-auto overflow-hidden rounded-xl border border-gray-100 shadow-xl md:w-[27rem] md:h-[27rem]"
+            class="h-full w-4/5 mx-auto overflow-hidden rounded-xl border border-gray-100 shadow-xl sm:w-[27rem] sm:h-[27rem]"
           />
         </div>
         <div
-          class="flex flex-col justify-between p-4 mx-auto text-center md:gap-4"
+          class="flex flex-col p-4 justify-start pb-10 md:mx-auto md:text-center gap-8 md:gap-8"
         >
-          <h2 class="text-xl font-semibold">
+          <h2 class="text-xl font-semibold w-full text-center md:text-left">
             Soft Boiled Eggs
             <span class="ml-1 text-lg text-gray-500">(12g Protein)</span>
           </h2>
-          <div class="flex flex-row gap-6 w-full text-left items-center">
-            <label for="quantity2" class="font-semibold">Quantity</label>
-            <select
-              id="quantity2"
-              class="block p-2 w-[10rem] bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-blue-500 focus:border-blue-500"
-            >
-              <option value="" disabled selected>Please Select</option>
-              <option value="option2">19</option>
-              <option value="option3">20</option>
-            </select>
+
+          <div
+            class="flex flex-row ml-4 md:ml-0 gap-3 w-full items-center justify-start"
+          >
+            <label for="quantity" class="font-semibold">Quantity</label>
+            <div class="flex">
+              <button
+                id="decrease"
+                class="bg-blue-500 text-white rounded-l px-4"
+              >
+                -
+              </button>
+              <select
+                id="quantity"
+                class="w-[8rem] sm:w-[10rem] bg-white border border-gray-300 focus:outline-none focus:border-blue-500"
+              >
+                <option value="" disabled selected>Please Select</option>
+
+                <option value="option1">1</option>
+                <option value="option2">2</option>
+                <option value="option3">3</option>
+                <option value="option4">4</option>
+                <option value="option5">5</option>
+                <option value="option6">6</option>
+                <option value="option7">7</option>
+                <option value="option8">8</option>
+                <option value="option9">9</option>
+                <option value="option10">10</option>
+                <option value="option11">11</option>
+                <option value="option12">12</option>
+                <option value="option13">13</option>
+                <option value="option14">14</option>
+                <option value="option15">15</option>
+                <option value="option16">16</option>
+                <option value="option17">17</option>
+                <option value="option18">18</option>
+                <option value="option19">19</option>
+                <option value="option20">20</option>
+              </select>
+              <button
+                id="increase"
+                class="bg-blue-500 text-white rounded-r px-4"
+              >
+                +
+              </button>
+            </div>
           </div>
         </div>
       </div>
+
       <!--Hard Eggs-->
       <div
-        class="flex flex-col bg-white shadow-xl gap-4 rounded-2xl m-4 lg:flex-row xl:m-12 md:mb-20"
+        class="flex flex-col gap-4 rounded-2xl m-4 lg:flex-row bg-white shadow-xl xl:m-12 md:mb-20"
       >
         <div class="rounded-2xl overflow-hidden px-8 py-8 lg:p-4">
           <img
             src="./Jotform/Hard Boiled Eggs.PNG"
-            class="h-50 mx-auto overflow-hidden rounded-xl border border-gray-100 shadow-xl md:w-[27rem] md:h-[27rem]"
+            class="h-full w-4/5 mx-auto overflow-hidden rounded-xl border border-gray-100 shadow-xl sm:w-[27rem] sm:h-[27rem]"
           />
         </div>
         <div
-          class="flex flex-col justify-between p-4 mx-auto text-center md:gap-4"
+          class="flex flex-col p-4 justify-start pb-10 md:mx-auto md:text-center gap-8 md:gap-8"
         >
-          <h2 class="text-xl font-semibold">
+          <h2 class="text-xl font-semibold w-full text-center md:text-left">
             Hard Boiled Eggs
             <span class="ml-1 text-lg text-gray-500">(12g Protein)</span>
           </h2>
-          <div class="flex flex-row gap-6 w-full text-left items-center">
-            <label for="quantity2" class="font-semibold">Quantity</label>
-            <select
-              id="quantity2"
-              class="block p-2 w-[10rem] bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-blue-500 focus:border-blue-500"
-            >
-              <option value="" disabled selected>Please Select</option>
-              <option value="option2">19</option>
-              <option value="option3">20</option>
-            </select>
+
+          <div
+            class="flex flex-row ml-4 md:ml-0 gap-3 w-full items-center justify-start"
+          >
+            <label for="quantity" class="font-semibold">Quantity</label>
+            <div class="flex">
+              <button
+                id="decrease"
+                class="bg-blue-500 text-white rounded-l px-4"
+              >
+                -
+              </button>
+              <select
+                id="quantity"
+                class="w-[8rem] sm:w-[10rem] bg-white border border-gray-300 focus:outline-none focus:border-blue-500"
+              >
+                <option value="" disabled selected>Please Select</option>
+
+                <option value="option1">1</option>
+                <option value="option2">2</option>
+                <option value="option3">3</option>
+                <option value="option4">4</option>
+                <option value="option5">5</option>
+                <option value="option6">6</option>
+                <option value="option7">7</option>
+                <option value="option8">8</option>
+                <option value="option9">9</option>
+                <option value="option10">10</option>
+                <option value="option11">11</option>
+                <option value="option12">12</option>
+                <option value="option13">13</option>
+                <option value="option14">14</option>
+                <option value="option15">15</option>
+                <option value="option16">16</option>
+                <option value="option17">17</option>
+                <option value="option18">18</option>
+                <option value="option19">19</option>
+                <option value="option20">20</option>
+              </select>
+              <button
+                id="increase"
+                class="bg-blue-500 text-white rounded-r px-4"
+              >
+                +
+              </button>
+            </div>
           </div>
         </div>
       </div>
 
       <!--Protein Banana Muffins-->
       <div
-        class="flex flex-col gap-4 bg-white shadow-xl rounded-2xl m-4 lg:flex-row xl:m-12 md:mb-20"
+        class="flex flex-col gap-4 rounded-2xl m-4 lg:flex-row bg-white shadow-xl xl:m-12 md:mb-20"
       >
         <div class="rounded-2xl overflow-hidden px-8 py-8 lg:p-4">
           <img
             src="./Jotform/Protein Banana Muffins.PNG"
-            class="h-50 mx-auto overflow-hidden rounded-xl border border-gray-100 shadow-xl md:w-[27rem] md:h-[27rem]"
+            class="h-full w-4/5 mx-auto overflow-hidden rounded-xl border border-gray-100 shadow-xl sm:w-[27rem] sm:h-[27rem]"
           />
         </div>
         <div
-          class="flex flex-col justify-between p-4 mx-auto text-center md:gap-4"
+          class="flex flex-col p-4 justify-start pb-10 md:mx-auto md:text-center gap-8 md:gap-8"
         >
-          <h2 class="text-xl font-semibold">
+          <h2 class="text-xl font-semibold w-full text-center md:text-left">
             Protein Banana Muffins
             <span class="ml-1 text-lg text-gray-500">(6g Protein)</span>
           </h2>
 
-          <div class="flex flex-row gap-4 md:gap-8 items-start">
+          <div class="flex flex-row ml-4 md:ml-0 gap-4 md:gap-8 items-start">
             <p class="font-semibold">Add Walnuts</p>
             <form class="flex flex-col md:flex-row gap-4">
               <div class="flex items-center">
                 <input
                   type="radio"
-                  id="Email"
-                  name="contact"
-                  value="Email"
+                  id="yes"
+                  name="yes"
+                  value="yes"
                   class="w-5 h-5 text-blue-600 border-gray-300 focus:ring-blue-500"
                 />
-                <label for="Email" class="ml-1 text-gray-700">Yes</label>
+                <label for="yes" class="ml-1 text-gray-700">Yes</label>
               </div>
               <div class="flex items-center">
                 <input
                   type="radio"
-                  id="Phone"
-                  name="contact"
-                  value="Phone"
+                  id="no"
+                  name="no"
+                  value="no"
                   class="w-5 h-5 text-blue-600 border-gray-300 focus:ring-blue-500"
                 />
-                <label for="Phone" class="ml-1 text-gray-700">No</label>
+                <label for="no" class="ml-1 text-gray-700">No</label>
               </div>
             </form>
           </div>
 
-          <div class="flex flex-row gap-6 w-full text-left items-center">
+          <!--ne-->
+
+          <div
+            class="flex flex-row ml-4 md:ml-0 gap-3 w-full items-center justify-start"
+          >
             <label for="quantity1" class="font-semibold">Quantity</label>
-            <select
-              id="quantity1"
-              class="block p-2 w-[10rem] bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-blue-500 focus:border-blue-500"
-            >
-              <option value="" disabled selected>Please Select</option>
-              <option value="option2">19</option>
-              <option value="option3">20</option>
-            </select>
+            <div class="flex">
+              <button
+                id="decrease"
+                class="bg-blue-500 text-white rounded-l px-4"
+              >
+                -
+              </button>
+              <select
+                id="quantity2"
+                class="w-[8rem] sm:w-[10rem] bg-white border border-gray-300 focus:outline-none focus:border-blue-500"
+              >
+                <option value="" disabled selected>Please Select</option>
+                <option value="option1">1</option>
+                <option value="option2">2</option>
+                <option value="option3">3</option>
+                <option value="option4">4</option>
+                <option value="option5">5</option>
+                <option value="option6">6</option>
+                <option value="option7">7</option>
+                <option value="option8">8</option>
+                <option value="option9">9</option>
+                <option value="option10">10</option>
+                <option value="option11">11</option>
+                <option value="option12">12</option>
+                <option value="option13">13</option>
+                <option value="option14">14</option>
+                <option value="option15">15</option>
+                <option value="option16">16</option>
+                <option value="option17">17</option>
+                <option value="option18">18</option>
+                <option value="option19">19</option>
+                <option value="option20">20</option>
+              </select>
+              <button
+                id="increase"
+                class="bg-blue-500 text-white rounded-r px-4"
+              >
+                +
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -1174,191 +1390,283 @@
         <div class="rounded-2xl overflow-hidden px-8 py-8 lg:p-4">
           <img
             src="./Jotform/Whey Protein Overnight Oats.PNG"
-            class="h-50 mx-auto overflow-hidden rounded-xl border border-gray-100 shadow-xl md:w-[27rem] md:h-[27rem]"
+            class="h-full w-4/5 mx-auto overflow-hidden rounded-xl border border-gray-100 shadow-xl sm:w-[27rem] sm:h-[27rem]"
           />
         </div>
         <div
-          class="flex flex-col justify-between p-4 mx-auto text-center md:gap-4"
+          class="flex flex-col p-4 justify-start pb-10 md:mx-auto md:text-center gap-8 md:gap-8"
         >
-          <h2 class="text-xl font-semibold">
+          <h2 class="text-xl font-semibold w-full text-center md:text-left">
             Whey Protein Overnight Oats
             <span class="ml-1 text-lg text-gray-500">(6g Protein)</span>
           </h2>
-          <div class="flex flex-col items-start">
-            <p class="font-semibold">
+
+          <!--ne-->
+          <div class="flex flex-col items-start ml-4 md:ml-0">
+            <p class="font-semibold mb-1">
               Fruit Add-on for the Whey Protein Overnight Oats
             </p>
-            <form class="text-base">
-              <div class="flex items-center mb-2">
-                <input
-                  type="checkbox"
-                  id="none"
-                  name="none"
-                  value="none"
-                  class="w-4 h-4"
-                />
-                <label for="none" class="ml-2">None</label>
-              </div>
-              <div class="flex items-center mb-2">
-                <input
-                  type="checkbox"
-                  id="banana"
-                  name="banana"
-                  value="banana"
-                  class="w-4 h-4"
-                />
-                <label for="banana" class="ml-2">Banana</label>
-              </div>
-              <div class="flex items-center mb-2">
-                <input
-                  type="checkbox"
-                  id="blueberries"
-                  name="blueberries"
-                  value="blueberries"
-                  class="w-4 h-4"
-                />
-                <label for="blueberries" class="ml-2">Blueberries</label>
-              </div>
-              <div class="flex items-center mb-2">
-                <input
-                  type="checkbox"
-                  id="strawberries"
-                  name="strawberries"
-                  value="strawberries"
-                  class="w-4 h-4"
-                />
-                <label for="strawberries" class="ml-2">Strawberries</label>
-              </div>
-              <div class="flex items-center mb-2">
-                <input
-                  type="checkbox"
-                  id="Rasberries"
-                  name="Rasberries"
-                  value="Rasberries"
-                  class="w-4 h-4"
-                />
-                <label for="Rasberries" class="ml-2">Rasberries</label>
-              </div>
-              <div class="flex items-center mb-2">
-                <input
-                  type="checkbox"
-                  id="Blackberries"
-                  name="Blackberries"
-                  value="Blackberries"
-                  class="w-4 h-4"
-                />
-                <label for="Blackberries" class="ml-2">Blackberries</label>
-              </div>
-            </form>
+            <div class="flex flex-col md:flex-row">
+              <form class="text-base flex-1 mb-2 md:mb-0">
+                <div class="flex items-center mb-2">
+                  <input
+                    type="checkbox"
+                    id="none"
+                    name="none"
+                    value="none"
+                    class="w-4 h-4"
+                  />
+                  <label for="none" class="ml-2">None</label>
+                </div>
+
+                <div class="flex items-center mb-2">
+                  <input
+                    type="checkbox"
+                    id="Rasberries"
+                    name="Rasberries"
+                    value="Rasberries"
+                    class="w-4 h-4"
+                  />
+                  <label for="Rasberries" class="ml-2">Rasberries</label>
+                </div>
+                <div class="flex items-center">
+                  <input
+                    type="checkbox"
+                    id="Blackberries"
+                    name="Blackberries"
+                    value="Blackberries"
+                    class="w-4 h-4"
+                  />
+                  <label for="Blackberries" class="ml-2">Blackberries</label>
+                </div>
+              </form>
+
+              <form class="flex-1 md:ml-4">
+                <div class="flex items-center mb-2">
+                  <input
+                    type="checkbox"
+                    id="blueberries"
+                    name="blueberries"
+                    value="blueberries"
+                    class="w-4 h-4"
+                  />
+                  <label for="blueberries" class="ml-2">Blueberries</label>
+                </div>
+                <div class="flex items-center mb-2">
+                  <input
+                    type="checkbox"
+                    id="strawberries"
+                    name="strawberries"
+                    value="strawberries"
+                    class="w-4 h-4"
+                  />
+                  <label for="strawberries" class="ml-2">Strawberries</label>
+                </div>
+                <div class="flex items-center">
+                  <input
+                    type="checkbox"
+                    id="banana2"
+                    name="banana2"
+                    value="banana"
+                    class="w-4 h-4"
+                  />
+                  <label for="banana2" class="ml-2">Banana</label>
+                </div>
+              </form>
+            </div>
           </div>
-          <div class="flex flex-row gap-6 w-full text-left items-center">
+
+          <!--ne-->
+
+          <div
+            class="flex flex-row ml-4 md:ml-0 gap-3 w-full items-center justify-start"
+          >
             <label for="quantity1" class="font-semibold">Quantity</label>
-            <select
-              id="quantity1"
-              class="block p-2 w-[10rem] bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-blue-500 focus:border-blue-500"
-            >
-              <option value="" disabled selected>Please Select</option>
-              <option value="option2">19</option>
-              <option value="option3">20</option>
-            </select>
+            <div class="flex">
+              <button
+                id="decrease"
+                class="bg-blue-500 text-white rounded-l px-4"
+              >
+                -
+              </button>
+              <select
+                id="quantity2"
+                class="w-[8rem] sm:w-[10rem] bg-white border border-gray-300 focus:outline-none focus:border-blue-500"
+              >
+                <option value="" disabled selected>Please Select</option>
+
+                <option value="option1">1</option>
+                <option value="option2">2</option>
+                <option value="option3">3</option>
+                <option value="option4">4</option>
+                <option value="option5">5</option>
+                <option value="option6">6</option>
+                <option value="option7">7</option>
+                <option value="option8">8</option>
+                <option value="option9">9</option>
+                <option value="option10">10</option>
+                <option value="option11">11</option>
+                <option value="option12">12</option>
+                <option value="option13">13</option>
+                <option value="option14">14</option>
+                <option value="option15">15</option>
+                <option value="option16">16</option>
+                <option value="option17">17</option>
+                <option value="option18">18</option>
+                <option value="option19">19</option>
+                <option value="option20">20</option>
+              </select>
+              <button
+                id="increase"
+                class="bg-blue-500 text-white rounded-r px-4"
+              >
+                +
+              </button>
+            </div>
           </div>
         </div>
       </div>
 
       <!-- Vegan Protein Overnight Oats -->
       <div
-        class="flex flex-col gap-4 rounded-2xl bg-white shadow-xl m-4 lg:flex-row xl:m-12 md:mb-20"
+        class="flex flex-col gap-4 rounded-2xl m-4 lg:flex-row bg-white shadow-xl xl:m-12 md:mb-20"
       >
         <div class="rounded-2xl overflow-hidden px-8 py-8 lg:p-4">
           <img
             src="./Jotform/Vegan Protein Overnight Oats.PNG"
-            class="h-50 mx-auto overflow-hidden rounded-xl border border-gray-100 shadow-xl md:w-[27rem] md:h-[27rem]"
+            class="h-full w-4/5 mx-auto overflow-hidden rounded-xl border border-gray-100 shadow-xl sm:w-[27rem] sm:h-[27rem]"
           />
         </div>
         <div
-          class="flex flex-col justify-between p-4 mx-auto text-center md:gap-4"
+          class="flex flex-col p-4 justify-start pb-10 md:mx-auto md:text-center gap-8 md:gap-8"
         >
-          <h2 class="text-xl font-semibold">
+          <h2 class="text-xl font-semibold w-full text-center md:text-left">
             Vegan Protein Overnight Oats
             <span class="ml-1 text-lg text-gray-500">(5g Protein)</span>
           </h2>
-          <div class="flex flex-col items-start">
-            <p class="font-semibold">
+
+          <!--ne-->
+          <div class="flex flex-col items-start ml-4 md:ml-0">
+            <p class="font-semibold mb-1">
               Fruit Add-on for the Whey Protein Overnight Oats
             </p>
-            <form class="text-base">
-              <div class="flex items-center mb-2">
-                <input
-                  type="checkbox"
-                  id="none"
-                  name="none"
-                  value="none"
-                  class="w-4 h-4"
-                />
-                <label for="none" class="ml-2">None</label>
-              </div>
-              <div class="flex items-center mb-2">
-                <input
-                  type="checkbox"
-                  id="banana"
-                  name="banana"
-                  value="banana"
-                  class="w-4 h-4"
-                />
-                <label for="banana" class="ml-2">Banana</label>
-              </div>
-              <div class="flex items-center mb-2">
-                <input
-                  type="checkbox"
-                  id="blueberries"
-                  name="blueberries"
-                  value="blueberries"
-                  class="w-4 h-4"
-                />
-                <label for="blueberries" class="ml-2">Blueberries</label>
-              </div>
-              <div class="flex items-center mb-2">
-                <input
-                  type="checkbox"
-                  id="strawberries"
-                  name="strawberries"
-                  value="strawberries"
-                  class="w-4 h-4"
-                />
-                <label for="strawberries" class="ml-2">Strawberries</label>
-              </div>
-              <div class="flex items-center mb-2">
-                <input
-                  type="checkbox"
-                  id="Rasberries"
-                  name="Rasberries"
-                  value="Rasberries"
-                  class="w-4 h-4"
-                />
-                <label for="Rasberries" class="ml-2">Rasberries</label>
-              </div>
-              <div class="flex items-center mb-2">
-                <input
-                  type="checkbox"
-                  id="Blackberries"
-                  name="Blackberries"
-                  value="Blackberries"
-                  class="w-4 h-4"
-                />
-                <label for="Blackberries" class="ml-2">Blackberries</label>
-              </div>
-            </form>
+            <div class="flex flex-col md:flex-row">
+              <form class="text-base flex-1 mb-2 md:mb-0">
+                <div class="flex items-center mb-2">
+                  <input
+                    type="checkbox"
+                    id="none"
+                    name="none"
+                    value="none"
+                    class="w-4 h-4"
+                  />
+                  <label for="none" class="ml-2">None</label>
+                </div>
+
+                <div class="flex items-center mb-2">
+                  <input
+                    type="checkbox"
+                    id="Rasberries"
+                    name="Rasberries"
+                    value="Rasberries"
+                    class="w-4 h-4"
+                  />
+                  <label for="Rasberries" class="ml-2">Rasberries</label>
+                </div>
+                <div class="flex items-center">
+                  <input
+                    type="checkbox"
+                    id="Blackberries"
+                    name="Blackberries"
+                    value="Blackberries"
+                    class="w-4 h-4"
+                  />
+                  <label for="Blackberries" class="ml-2">Blackberries</label>
+                </div>
+              </form>
+
+              <form class="flex-1 md:ml-4">
+                <div class="flex items-center mb-2">
+                  <input
+                    type="checkbox"
+                    id="blueberries"
+                    name="blueberries"
+                    value="blueberries"
+                    class="w-4 h-4"
+                  />
+                  <label for="blueberries" class="ml-2">Blueberries</label>
+                </div>
+                <div class="flex items-center mb-2">
+                  <input
+                    type="checkbox"
+                    id="strawberries"
+                    name="strawberries"
+                    value="strawberries"
+                    class="w-4 h-4"
+                  />
+                  <label for="strawberries" class="ml-2">Strawberries</label>
+                </div>
+                <div class="flex items-center">
+                  <input
+                    type="checkbox"
+                    id="banana2"
+                    name="banana2"
+                    value="banana"
+                    class="w-4 h-4"
+                  />
+                  <label for="banana2" class="ml-2">Banana</label>
+                </div>
+              </form>
+            </div>
           </div>
-          <div class="flex flex-row gap-6 w-full text-left items-center">
+
+          <!--ne-->
+
+          <div
+            class="flex flex-row ml-4 md:ml-0 gap-4 w-full items-center justify-start"
+          >
             <label for="quantity1" class="font-semibold">Quantity</label>
-            <select
-              id="quantity1"
-              class="block p-2 w-[10rem] bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-blue-500 focus:border-blue-500"
-            >
-              <option value="" disabled selected>Please Select</option>
-              <option value="option2">19</option>
-              <option value="option3">20</option>
-            </select>
+            <div class="flex">
+              <button
+                id="decrease"
+                class="bg-blue-500 text-white rounded-l px-4"
+              >
+                -
+              </button>
+              <select
+                id="quantity2"
+                class="w-[8rem] sm:w-[10rem] bg-white border border-gray-300 focus:outline-none focus:border-blue-500"
+              >
+                <option value="" disabled selected>Please Select</option>
+
+                <option value="option1">1</option>
+                <option value="option2">2</option>
+                <option value="option3">3</option>
+                <option value="option4">4</option>
+                <option value="option5">5</option>
+                <option value="option6">6</option>
+                <option value="option7">7</option>
+                <option value="option8">8</option>
+                <option value="option9">9</option>
+                <option value="option10">10</option>
+                <option value="option11">11</option>
+                <option value="option12">12</option>
+                <option value="option13">13</option>
+                <option value="option14">14</option>
+                <option value="option15">15</option>
+                <option value="option16">16</option>
+                <option value="option17">17</option>
+                <option value="option18">18</option>
+                <option value="option19">19</option>
+                <option value="option20">20</option>
+              </select>
+              <button
+                id="increase"
+                class="bg-blue-500 text-white rounded-r px-4"
+              >
+                +
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -1379,26 +1687,62 @@
         <div class="rounded-2xl overflow-hidden px-8 py-8 lg:p-4">
           <img
             src="./Jotform/Chocolate Protein Balls.PNG"
-            class="h-50 mx-auto overflow-hidden rounded-xl border border-gray-100 shadow-xl md:w-[27rem] md:h-[27rem]"
+            class="h-full w-4/5 mx-auto overflow-hidden rounded-xl border border-gray-100 shadow-xl sm:w-[27rem] sm:h-[27rem]"
           />
         </div>
         <div
-          class="flex flex-col justify-between p-4 mx-auto text-center md:gap-4"
+          class="flex flex-col p-4 justify-start pb-10 md:mx-auto md:text-center gap-8 md:gap-8"
         >
-          <h2 class="text-xl font-semibold">
+          <h2 class="text-xl font-semibold w-full text-center md:text-left">
             Chocolate Protein Balls
             <span class="ml-1 text-lg text-gray-500">(13g Protein)</span>
           </h2>
-          <div class="flex flex-row gap-6 w-full text-left items-center">
-            <label for="quantity2" class="font-semibold">Quantity</label>
-            <select
-              id="quantity2"
-              class="block p-2 w-[10rem] bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-blue-500 focus:border-blue-500"
-            >
-              <option value="" disabled selected>Please Select</option>
-              <option value="option2">19</option>
-              <option value="option3">20</option>
-            </select>
+
+          <div
+            class="flex flex-row ml-4 md:ml-0 gap-3 w-full items-center justify-start"
+          >
+            <label for="quantity" class="font-semibold">Quantity</label>
+            <div class="flex">
+              <button
+                id="decrease"
+                class="bg-blue-500 text-white rounded-l px-4"
+              >
+                -
+              </button>
+              <select
+                id="quantity"
+                class="w-[8rem] sm:w-[10rem] bg-white border border-gray-300 focus:outline-none focus:border-blue-500"
+              >
+                <option value="" disabled selected>Please Select</option>
+
+                <option value="option1">1</option>
+                <option value="option2">2</option>
+                <option value="option3">3</option>
+                <option value="option4">4</option>
+                <option value="option5">5</option>
+                <option value="option6">6</option>
+                <option value="option7">7</option>
+                <option value="option8">8</option>
+                <option value="option9">9</option>
+                <option value="option10">10</option>
+                <option value="option11">11</option>
+                <option value="option12">12</option>
+                <option value="option13">13</option>
+                <option value="option14">14</option>
+                <option value="option15">15</option>
+                <option value="option16">16</option>
+                <option value="option17">17</option>
+                <option value="option18">18</option>
+                <option value="option19">19</option>
+                <option value="option20">20</option>
+              </select>
+              <button
+                id="increase"
+                class="bg-blue-500 text-white rounded-r px-4"
+              >
+                +
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -1410,57 +1754,129 @@
         <div class="rounded-2xl overflow-hidden px-8 py-8 lg:p-4">
           <img
             src="./Jotform/Chicken Salad.PNG"
-            class="h-50 mx-auto overflow-hidden rounded-xl border border-gray-100 shadow-xl md:w-[27rem] md:h-[27rem]"
+            class="h-full w-4/5 mx-auto overflow-hidden rounded-xl border border-gray-100 shadow-xl sm:w-[27rem] sm:h-[27rem]"
           />
         </div>
         <div
-          class="flex flex-col justify-between p-4 mx-auto text-center md:gap-4"
+          class="flex flex-col p-4 justify-start pb-10 md:mx-auto md:text-center gap-8 md:gap-8"
         >
-          <h2 class="text-xl font-semibold">
+          <h2 class="text-xl font-semibold w-full text-center md:text-left">
             Chicken Salad
             <span class="ml-1 text-lg text-gray-500"></span>
           </h2>
-          <div class="flex flex-row gap-6 w-full text-left items-center">
-            <label for="quantity2" class="font-semibold">Quantity</label>
-            <select
-              id="quantity2"
-              class="block p-2 w-[10rem] bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-blue-500 focus:border-blue-500"
-            >
-              <option value="" disabled selected>Please Select</option>
-              <option value="option2">19</option>
-              <option value="option3">20</option>
-            </select>
+
+          <div
+            class="flex flex-row ml-4 md:ml-0 gap-3 w-full items-center justify-start"
+          >
+            <label for="quantity" class="font-semibold">Quantity</label>
+            <div class="flex">
+              <button
+                id="decrease"
+                class="bg-blue-500 text-white rounded-l px-4"
+              >
+                -
+              </button>
+              <select
+                id="quantity"
+                class="w-[8rem] sm:w-[10rem] bg-white border border-gray-300 focus:outline-none focus:border-blue-500"
+              >
+                <option value="" disabled selected>Please Select</option>
+
+                <option value="option1">1</option>
+                <option value="option2">2</option>
+                <option value="option3">3</option>
+                <option value="option4">4</option>
+                <option value="option5">5</option>
+                <option value="option6">6</option>
+                <option value="option7">7</option>
+                <option value="option8">8</option>
+                <option value="option9">9</option>
+                <option value="option10">10</option>
+                <option value="option11">11</option>
+                <option value="option12">12</option>
+                <option value="option13">13</option>
+                <option value="option14">14</option>
+                <option value="option15">15</option>
+                <option value="option16">16</option>
+                <option value="option17">17</option>
+                <option value="option18">18</option>
+                <option value="option19">19</option>
+                <option value="option20">20</option>
+              </select>
+              <button
+                id="increase"
+                class="bg-blue-500 text-white rounded-r px-4"
+              >
+                +
+              </button>
+            </div>
           </div>
         </div>
       </div>
 
       <!--Tuna Salad-->
       <div
-        class="flex flex-col bg-white shadow-xl gap-4 rounded-2xl m-4 lg:flex-row xl:m-12 md:mb-20"
+        class="flex flex-col gap-4 rounded-2xl m-4 lg:flex-row bg-white shadow-xl xl:m-12 md:mb-20"
       >
         <div class="rounded-2xl overflow-hidden px-8 py-8 lg:p-4">
           <img
             src="./Jotform/Tuna Salad.PNG"
-            class="h-50 mx-auto overflow-hidden rounded-xl border border-gray-100 shadow-xl md:w-[27rem] md:h-[27rem]"
+            class="h-full w-4/5 mx-auto overflow-hidden rounded-xl border border-gray-100 shadow-xl sm:w-[27rem] sm:h-[27rem]"
           />
         </div>
         <div
-          class="flex flex-col justify-between p-4 mx-auto text-center md:gap-4"
+          class="flex flex-col p-4 justify-start pb-10 md:mx-auto md:text-center gap-8 md:gap-8"
         >
-          <h2 class="text-xl font-semibold">
+          <h2 class="text-xl font-semibold w-full text-center md:text-left">
             Tuna Salad
             <span class="ml-1 text-lg text-gray-500"></span>
           </h2>
-          <div class="flex flex-row gap-6 w-full text-left items-center">
-            <label for="quantity2" class="font-semibold">Quantity</label>
-            <select
-              id="quantity2"
-              class="block p-2 w-[10rem] bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-blue-500 focus:border-blue-500"
-            >
-              <option value="" disabled selected>Please Select</option>
-              <option value="option2">19</option>
-              <option value="option3">20</option>
-            </select>
+
+          <div
+            class="flex flex-row ml-4 md:ml-0 gap-3 w-full items-center justify-start"
+          >
+            <label for="quantity" class="font-semibold">Quantity</label>
+            <div class="flex">
+              <button
+                id="decrease"
+                class="bg-blue-500 text-white rounded-l px-4"
+              >
+                -
+              </button>
+              <select
+                id="quantity"
+                class="w-[8rem] sm:w-[10rem] bg-white border border-gray-300 focus:outline-none focus:border-blue-500"
+              >
+                <option value="" disabled selected>Please Select</option>
+
+                <option value="option1">1</option>
+                <option value="option2">2</option>
+                <option value="option3">3</option>
+                <option value="option4">4</option>
+                <option value="option5">5</option>
+                <option value="option6">6</option>
+                <option value="option7">7</option>
+                <option value="option8">8</option>
+                <option value="option9">9</option>
+                <option value="option10">10</option>
+                <option value="option11">11</option>
+                <option value="option12">12</option>
+                <option value="option13">13</option>
+                <option value="option14">14</option>
+                <option value="option15">15</option>
+                <option value="option16">16</option>
+                <option value="option17">17</option>
+                <option value="option18">18</option>
+                <option value="option19">19</option>
+                <option value="option20">20</option>
+              </select>
+              <button
+                id="increase"
+                class="bg-blue-500 text-white rounded-r px-4"
+              >
+                +
+              </button>
+            </div>
           </div>
         </div>
       </div>

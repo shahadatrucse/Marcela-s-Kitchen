@@ -1,0 +1,281 @@
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Test</title>
+  </head>
+  <body>
+    <div
+      class="flex flex-col gap-4 rounded-2xl m-4 bg-white shadow-xl lg:flex-row xl:m-12 md:mb-20"
+    >
+      <div class="rounded-2xl overflow-hidden px-8 py-8 lg:p-4">
+        <img
+          src="./Jotform/Soft Boiled Eggs.PNG"
+          class="h-full w-4/5 mx-auto overflow-hidden rounded-xl border border-gray-100 shadow-xl sm:w-[27rem] sm:h-[27rem]"
+        />
+      </div>
+      <div
+        class="flex flex-col p-4 justify-start pb-10 md:mx-auto md:text-center md:gap-4"
+      >
+        <h2 class="text-xl font-semibold mx-auto">
+          Soft Boiled Eggs
+          <span class="ml-1 text-lg text-gray-500">(12g Protein)</span>
+        </h2>
+        <div
+          class="flex flex-row w-full gap-4 mt-6 ml-0 sm:ml-8 sm:gap-8 justify-start"
+        >
+          <label class="font-semibold justify-start"> Quantity </label>
+          <div class="flex">
+            <button id="decrease" class="bg-blue-500 text-white rounded-l px-4">
+              -
+            </button>
+            <select
+              id="quantity2"
+              class="w-[8rem] sm:w-[10rem] bg-white border border-gray-300 focus:outline-none focus:border-blue-500"
+            >
+              <option value="" disabled selected>Please Select</option>
+              <option value="option2">1</option>
+              <option value="option2">19</option>
+              <option value="option3">20</option>
+            </select>
+            <button id="increase" class="bg-blue-500 text-white rounded-r px-4">
+              +
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex flex-col gap-4 rounded-2xl m-4 lg:flex-row bg-white shadow-xl xl:m-12 md:mb-20"
+    >
+      <div class="rounded-2xl overflow-hidden px-8 py-8 lg:p-4">
+        <img
+          src="./Jotform/Whey Protein Overnight Oats.PNG"
+          class="h-50 mx-auto overflow-hidden rounded-xl border border-gray-100 shadow-xl md:w-[27rem] md:h-[27rem]"
+        />
+      </div>
+      <div class="flex flex-col p-4 mx-auto text-center md:gap-4">
+        <h2 class="text-xl font-semibold">
+          Whey Protein Overnight Oats
+          <span class="ml-1 text-lg text-gray-500">(6g Protein)</span>
+        </h2>
+        <div class="flex flex-row gap-6 w-full md: items-center">
+          <label for="quantity1" class="font-semibold">Quantity</label>
+          <select
+            id="quantity1"
+            class="block p-2 w-[10rem] bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-blue-500 focus:border-blue-500"
+          >
+            <option value="" disabled selected>Please Select</option>
+            <option value="option2">19</option>
+            <option value="option3">20</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Test</title>
+  </head>
+  <body>
+    <div
+      class="flex flex-col gap-4 rounded-2xl m-4 lg:flex-row bg-white shadow-xl xl:m-12 md:mb-20"
+    >
+      <div class="rounded-2xl overflow-hidden px-8 py-8 lg:p-4">
+        <img
+          src="./Jotform/Whey Protein Overnight Oats.PNG"
+          class="h-full w-4/5 mx-auto overflow-hidden rounded-xl border border-gray-100 shadow-xl sm:w-[27rem] sm:h-[27rem]"
+        />
+      </div>
+      <div
+        class="flex flex-col p-4 justify-start pb-10 md:mx-auto md:text-center gap-8 md:gap-8"
+      >
+        <h2 class="text-xl font-semibold w-full text-center md:text-left">
+          Protein Banana Muffins
+          <span class="ml-1 text-lg text-gray-500">(6g Protein)</span>
+        </h2>
+
+        <div class="flex flex-row ml-4 md:ml-0 gap-4 md:gap-8 items-start">
+          <p class="font-semibold">Add Walnuts</p>
+          <form class="flex flex-col md:flex-row gap-4">
+            <div class="flex items-center">
+              <input
+                type="radio"
+                id="yes"
+                name="yes"
+                value="yes"
+                class="w-5 h-5 text-blue-600 border-gray-300 focus:ring-blue-500"
+              />
+              <label for="yes" class="ml-1 text-gray-700">Yes</label>
+            </div>
+            <div class="flex items-center">
+              <input
+                type="radio"
+                id="no"
+                name="no"
+                value="no"
+                class="w-5 h-5 text-blue-600 border-gray-300 focus:ring-blue-500"
+              />
+              <label for="no" class="ml-1 text-gray-700">No</label>
+            </div>
+          </form>
+        </div>
+
+        <!--ne-->
+
+        <div
+          class="flex flex-row ml-4 md:ml-0 gap-4 w-full items-center justify-start"
+        >
+          <label for="quantity1" class="font-semibold">Quantity</label>
+          <div class="flex">
+            <button id="decrease" class="bg-blue-500 text-white rounded-l px-4">
+              -
+            </button>
+            <select
+              id="quantity2"
+              class="w-[8rem] sm:w-[10rem] bg-white border border-gray-300 focus:outline-none focus:border-blue-500"
+            >
+              <option value="" disabled selected>Please Select</option>
+              <option value="option2">1</option>
+              <option value="option2">19</option>
+              <option value="option3">20</option>
+            </select>
+            <button id="increase" class="bg-blue-500 text-white rounded-r px-4">
+              +
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Maint-->
+
+    <div
+      class="flex flex-col gap-4 rounded-2xl m-4 lg:flex-row bg-white shadow-xl xl:m-12 md:mb-20"
+    >
+      <div class="rounded-2xl overflow-hidden px-8 py-8 lg:p-4">
+        <img
+          src="./Jotform/Whey Protein Overnight Oats.PNG"
+          class="h-full w-4/5 mx-auto overflow-hidden rounded-xl border border-gray-100 shadow-xl sm:w-[27rem] sm:h-[27rem]"
+        />
+      </div>
+      <div
+        class="flex flex-col p-4 justify-start pb-10 md:mx-auto md:text-center gap-8 md:gap-8"
+      >
+        <h2 class="text-xl font-semibold w-full text-center md:text-left">
+          Whey Protein Overnight Oats
+          <span class="ml-1 text-lg text-gray-500">(6g Protein)</span>
+        </h2>
+
+        <!--ne-->
+        <div class="flex flex-col items-start ml-8 md:ml-0">
+          <p class="font-semibold mb-1">
+            Fruit Add-on for the Whey Protein Overnight Oats
+          </p>
+          <div class="flex flex-col md:flex-row">
+            <form class="text-base flex-1 mb-2 md:mb-0">
+              <div class="flex items-center mb-2">
+                <input
+                  type="checkbox"
+                  id="none"
+                  name="none"
+                  value="none"
+                  class="w-4 h-4"
+                />
+                <label for="none" class="ml-2">None</label>
+              </div>
+
+              <div class="flex items-center mb-2">
+                <input
+                  type="checkbox"
+                  id="Rasberries"
+                  name="Rasberries"
+                  value="Rasberries"
+                  class="w-4 h-4"
+                />
+                <label for="Rasberries" class="ml-2">Rasberries</label>
+              </div>
+              <div class="flex items-center">
+                <input
+                  type="checkbox"
+                  id="Blackberries"
+                  name="Blackberries"
+                  value="Blackberries"
+                  class="w-4 h-4"
+                />
+                <label for="Blackberries" class="ml-2">Blackberries</label>
+              </div>
+            </form>
+
+            <form class="flex-1 md:ml-4">
+              <div class="flex items-center mb-2">
+                <input
+                  type="checkbox"
+                  id="blueberries"
+                  name="blueberries"
+                  value="blueberries"
+                  class="w-4 h-4"
+                />
+                <label for="blueberries" class="ml-2">Blueberries</label>
+              </div>
+              <div class="flex items-center mb-2">
+                <input
+                  type="checkbox"
+                  id="strawberries"
+                  name="strawberries"
+                  value="strawberries"
+                  class="w-4 h-4"
+                />
+                <label for="strawberries" class="ml-2">Strawberries</label>
+              </div>
+              <div class="flex items-center">
+                <input
+                  type="checkbox"
+                  id="banana2"
+                  name="banana2"
+                  value="banana"
+                  class="w-4 h-4"
+                />
+                <label for="banana2" class="ml-2">Banana</label>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!--ne-->
+
+        <div
+          class="flex flex-row ml-8 md:ml-0 gap-6 w-full items-center justify-start"
+        >
+          <label for="quantity1" class="font-semibold">Quantity</label>
+          <div class="flex">
+            <button id="decrease" class="bg-blue-500 text-white rounded-l px-4">
+              -
+            </button>
+            <select
+              id="quantity2"
+              class="w-[8rem] sm:w-[10rem] bg-white border border-gray-300 focus:outline-none focus:border-blue-500"
+            >
+              <option value="" disabled selected>Please Select</option>
+              <option value="option2">1</option>
+              <option value="option2">19</option>
+              <option value="option3">20</option>
+            </select>
+            <button id="increase" class="bg-blue-500 text-white rounded-r px-4">
+              +
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

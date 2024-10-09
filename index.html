@@ -1958,39 +1958,6 @@
 
       <!--Food Alegories-->
       <!--Protein Banana Muffins-->
-      <!-- <div
-        class="min-[100px]:w-[90%] max-[639px]:w-[90%] sm:w-[30rem] md:w-[46rem] lg:w-[62rem] xl:w-[78rem] flex flex-col gap-4 rounded-2xl m-4 lg:flex-row bg-white shadow-xl xl:m-12 md:mb-20"
-      >
-        <div class="flex flex-col p-4 justify-start pb-10 gap-8 md:gap-16">
-          <div class="flex flex-row ml-4 md:ml-0 gap-4 md:gap-8 items-start">
-            <p class="font-semibold">Do you have any food allergies?</p>
-            <form class="flex flex-row gap-4">
-              <div class="flex items-center">
-                <input
-                  type="radio"
-                  id="yes"
-                  name="yes"
-                  value="yes"
-                  class="w-5 h-5 text-blue-600 border-gray-300 focus:ring-blue-500"
-                />
-                <label for="yes" class="ml-1 text-gray-700">Yes</label>
-              </div>
-              <div class="flex items-center">
-                <input
-                  type="radio"
-                  id="no"
-                  name="no"
-                  value="no"
-                  class="w-5 h-5 text-blue-600 border-gray-300 focus:ring-blue-500"
-                />
-                <label for="no" class="ml-1 text-gray-700">No</label>
-              </div>
-            </form>
-          </div>
-
-          
-        </div>
-      </div> -->
       <div
         class="min-[100px]:w-[90%] max-[639px]:w-[90%] sm:w-[30rem] md:w-[46rem] lg:w-[62rem] xl:w-[78rem] flex flex-col gap-4 rounded-2xl m-4 lg:flex-row bg-white shadow-xl xl:m-12 md:mb-20"
       >
@@ -2048,41 +2015,6 @@
       </script>
 
       <!--Protein Deli Muffins-->
-      <!-- <div
-        class="min-[100px]:w-[90%] max-[639px]:w-[90%] sm:w-[30rem] md:w-[46rem] lg:w-[62rem] xl:w-[78rem] flex flex-col gap-4 rounded-2xl m-4 lg:flex-row bg-white shadow-xl xl:m-12 md:mb-20"
-      >
-        <div class="flex flex-col p-4 justify-start pb-10 gap-8 md:gap-16">
-          <div class="flex flex-row ml-4 md:ml-0 gap-4 md:gap-8 items-start">
-            <p class="font-semibold">
-              How would you like to receive your order?
-            </p>
-            <form class="flex flex-row gap-4">
-              <div class="flex items-center">
-                <input
-                  type="radio"
-                  id="yes"
-                  name="yes"
-                  value="yes"
-                  class="w-5 h-5 text-blue-600 border-gray-300 focus:ring-blue-500"
-                />
-                <label for="yes" class="ml-1 text-gray-700">Delivery</label>
-              </div>
-              <div class="flex items-center">
-                <input
-                  type="radio"
-                  id="no"
-                  name="no"
-                  value="no"
-                  class="w-5 h-5 text-blue-600 border-gray-300 focus:ring-blue-500"
-                />
-                <label for="no" class="ml-1 text-gray-700">Pickup</label>
-              </div>
-            </form>
-          </div>
-
-          
-        </div>
-      </div> -->
 
       <div
         class="min-[100px]:w-[90%] max-[639px]:w-[90%] sm:w-[30rem] md:w-[46rem] lg:w-[62rem] xl:w-[78rem] flex flex-col gap-4 rounded-2xl m-4 lg:flex-row bg-white shadow-xl xl:m-12 md:mb-20"
@@ -2311,33 +2243,7 @@
               </div>
             </div>
           </div>
-          <!-- <div class="mb-6 space-y-3 md:space-y-0 md:flex md:items-center">
-            <p class="block md:w-2/3 font-semibold text-base md:mr-2">
-              Referred by Anyone?
-            </p>
-            <div class="flex flex-row gap-4">
-              <div class="flex items-center">
-                <input
-                  type="radio"
-                  id="yes"
-                  name="refer"
-                  value="yes"
-                  class="w-5 h-5 text-blue-600 border-gray-300 focus:ring-blue-500"
-                />
-                <label for="refer" class="ml-1 text-gray-700">Yes</label>
-              </div>
-              <div class="flex items-center">
-                <input
-                  type="radio"
-                  id="no"
-                  name="refer"
-                  value="no"
-                  class="w-5 h-5 text-blue-600 border-gray-300 focus:ring-blue-500"
-                />
-                <label for="no" class="ml-1 text-gray-700">No</label>
-              </div>
-            </div>
-          </div> -->
+
           <div class="mb-6 space-y-3 md:space-y-0 md:flex md:items-center">
             <p class="block md:w-2/3 font-semibold text-base md:mr-2">
               Referred by Anyone?
@@ -2368,34 +2274,53 @@
             </div>
           </div>
 
-          <!-- Hidden input fields for referred person's information -->
-          <div id="referral-fields" class="hidden flex flex-col gap-4">
-            <div class="flex flex-col">
-              <label for="ref-first-name">Referred First Name:</label>
-              <input
-                type="text"
-                id="ref-first-name"
-                class="border border-gray-300 rounded-lg p-2 w-full"
-                placeholder="Enter first name"
-              />
+          <div
+            id="referral-fields"
+            class="hidden mb-6 flex flex-col space-y-4 md:space-y-4"
+          >
+            <div class="w-full md:flex md:items-center">
+              <label
+                for="ref-first-name"
+                class="block md:w-1/3 font-semibold text-base md:mr-2"
+              >
+                Referred By<span class="text-red-500">*</span>
+              </label>
+              <div
+                class="flex-1 flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2"
+              >
+                <input
+                  type="text"
+                  id="ref-first-name"
+                  placeholder="First Name"
+                  class="block w-full p-3 border border-gray-300 rounded-md"
+                  required
+                />
+                <input
+                  type="text"
+                  id="ref-last-name"
+                  placeholder="Last Name"
+                  class="block w-full p-3 border border-gray-300 rounded-md"
+                  required
+                />
+              </div>
             </div>
-            <div class="flex flex-col">
-              <label for="ref-last-name">Referred Last Name:</label>
-              <input
-                type="text"
-                id="ref-last-name"
-                class="border border-gray-300 rounded-lg p-2 w-full"
-                placeholder="Enter last name"
-              />
-            </div>
-            <div class="flex flex-col">
-              <label for="ref-phone">Referred Phone Number:</label>
-              <input
-                type="text"
-                id="ref-phone"
-                class="border border-gray-300 rounded-lg p-2 w-full"
-                placeholder="Enter phone number"
-              />
+
+            <div class="w-full md:flex md:items-center">
+              <label
+                for="ref-phone-number"
+                class="block md:w-1/3 font-semibold text-base md:mr-2"
+              >
+                Phone Number<span class="text-red-500">*</span>
+              </label>
+              <div class="flex-1">
+                <input
+                  type="text"
+                  id="ref-phone-number"
+                  placeholder="Phone Number"
+                  class="block w-full p-3 border border-gray-300 rounded-md"
+                  required
+                />
+              </div>
             </div>
           </div>
 

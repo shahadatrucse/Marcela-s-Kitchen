@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <style>
+      .swiper-wrapper {
+        transition-timing-function: linear;
+      }
+    </style>
+    <style>
+      .carousel {
+        display: flex;
+        transition: transform 0.01s ease;
+      }
+      .card {
+        flex: 0 0 auto; /* Allow cards to adjust based on their width */
+        width: 100%;
+        margin: 0.1rem; /* Default to full width for small screens */
+      }
+    </style>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Marcela's - Kitchen</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./Jotform/favicon-2021-light@2x.png"
+    />
+  </head>
+
+  <body class="bg-gray-100 text-[#800000] overflow-x-hidden">
+    <!--Logo Section-->
+    <section class="hidden sm:block">
+      <img
+        src="./Jotform/back.png"
+        alt=""
+        class="w-full h-auto sm:mx-auto sm:px-8 sm:py-10 sm:h-[15rem] sm:w-[35rem] object-cover rounded-none"
+      />
+    </section>
+    <!--Navbar-->
+    <section class="mb-12">
+      <header id="headerId" class="px-3 py-6 z-10 relative">
+        <nav
+          id="navId"
+          class="grid grid-cols-[1fr_1fr] sm:grid-cols-[1fr] gap-4 items-center justify-between"
+        >
+          <div class="w-[98%] sm:hidden">
+            <img
+              src="./Jotform/back.png"
+              alt=""
+              id="logoId"
+              class="h-[50px] w-[200px]"
+            />
+          </div>
+          <div class="hidden sm:block">
+            <ul
+              class="flex flex-row gap-12 items-center justify-center text-lg font-medium"
+            >
+              <li>
+                <a
+                  href="/index.html"
+                  class="hover:text-blue-500 hover:fill-blue-500 text-gray-800 text-lg font-medium block"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/about.html"
+                  class="hover:text-blue-500 hover:fill-blue-500 text-gray-800 text-lg font-medium block"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/contact.html"
+                  class="hover:text-blue-500 hover:fill-blue-500 text-gray-800 text-lg font-medium block"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/menu.html"
+                  class="hover:text-blue-500 hover:fill-blue-500 text-gray-800 text-lg font-medium block"
+                  >Menu Prep</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="sm:hidden w-full pr-4 h-auto">
+            <button
+              id="menu-button"
+              class="justify-end float-right focus:outline-none w-[10%]"
+            >
+              <svg
+                class="h-[33.44px] bg-blue-500 text-white font-semibold rounded p-1"
+                fill="white"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
+              </svg>
+            </button>
+            <button
+              id="close-button"
+              class="hidden lg:hidden w-[10%] justify-end float-right focus:outline-none"
+            >
+              <svg
+                class="h-[33.44px] bg-blue-500 text-white font-semibold rounded p-1"
+                fill="white"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 18L18 6M6 6l12 12"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </nav>
+      </header>
+
+      <div id="mobile-menu" class="hidden lg:hidden h-screen text-white">
+        <ul
+          class="flex flex-col gap-4 ml-4 items-start justify-start text-lg font-medium"
+        >
+          <li>
+            <a
+              href="/index.html"
+              class="hover:text-blue-500 hover:fill-blue-500 text-white text-lg font-medium block"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="/about.html"
+              class="hover:text-blue-500 hover:fill-blue-500 text-white text-lg font-medium block"
+              >About</a
+            >
+          </li>
+
+          <li>
+            <a
+              href="/contact.html"
+              class="hover:text-blue-500 hover:fill-blue-500 text-white text-lg font-medium block"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              href="/menu.html"
+              class="hover:text-blue-500 hover:fill-blue-500 text-gray-800 text-lg font-medium block"
+              >Menu Prep</a
+            >
+          </li>
+        </ul>
+      </div>
+      <script>
+        // JavaScript for toggling the mobile menu
+        const menuButton = document.getElementById("menu-button");
+        const closeButton = document.getElementById("close-button");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const logoId = document.getElementById("logoId");
+        const navId = document.getElementById("navId");
+        const bodyId = document.getElementById("bodyId");
+        const headerId = document.getElementById("headerId");
+
+        // Show mobile menu and change styles when menu button is clicked
+        menuButton.addEventListener("click", () => {
+          mobileMenu.classList.toggle("hidden");
+          menuButton.classList.add("hidden"); // Hide the menu button
+          closeButton.classList.remove("hidden"); // Show the close button
+          logoId.classList.toggle("hidden");
+          //   navId.classList.add("border-b", "pb-5", "border-white"); // Ensure you're adding classes correctly
+          bodyId.classList.add("bg-black");
+          headerId.classList.add("py-4");
+        });
+
+        // Hide mobile menu and revert styles when close button is clicked
+        closeButton.addEventListener("click", () => {
+          mobileMenu.classList.toggle("hidden");
+          menuButton.classList.remove("hidden"); // Show the menu button
+          closeButton.classList.add("hidden"); // Hide the close button
+          logoId.classList.toggle("hidden");
+          //   navId.classList.remove("border-b-4", "pb-3", "border-red-500"); // Remove classes correctly
+          bodyId.classList.remove("bg-black"); // Remove the background class
+          headerId.classList.remove("py-4"); // Remove the background class
+        });
+      </script>
+    </section>
+    <!--Hero-->
+    <section>
+      <div
+        class="w-full mb-10 flex flex-col mx-auto bg-white rounded-2xl xl:w-[78rem]"
+      >
+        <div class="flex justify-center overflow-hidden">
+          <img
+            src="./Jotform/Mobile Hero.png"
+            alt="Small Image"
+            class="block sm:hidden h-full w-[100%]"
+          />
+          <img
+            src="./Jotform/Desktop Hero.png"
+            alt="Large Image"
+            class="hidden sm:block md:w-[100%] md:h-[36rem] rounded-2xl"
+          />
+        </div>
+      </div>
+    </section>
+    <!--Mission-->
+    <section>
+      <div
+        class="w-full mb-10 flex flex-col mx-auto bg-white rounded-2xl xl:w-[78rem]"
+      >
+        <div class="flex justify-center overflow-hidden">
+          <img
+            src="./Jotform/About Mobile.png"
+            alt="Small Image"
+            class="block sm:hidden h-full w-[100%]"
+          />
+          <img
+            src="./Jotform/About Desktop.png"
+            alt="Large Image"
+            class="hidden sm:block md:w-[100%] md:h-[36rem] rounded-2xl"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!--Footer Section Start-->
+    <section class="w-full bg-cover bg-center bg-black">
+      <div class="flex flex-col lg:hidden">
+        <img
+          src="/Jotform/back.png"
+          alt="Novaride Logo"
+          class="w-48 mb-4 ml-8 mt-10"
+        />
+      </div>
+      <div
+        class="grid grid-cols-[1fr] md:grid-cols-[1fr_1fr_1fr] md:justify-between lg:grid-cols-[1fr_1fr_1fr_1fr] gap-8 items-start justify-start p-6 lg:pt-20 border-b mx-2 border-gray-100"
+      >
+        <div class="flex flex-col hidden lg:block">
+          <img src="/Jotform/back.png" alt="Novaride Logo" class="w-48 mb-8" />
+        </div>
+        <div class="flex flex-col">
+          <h2 class="text-white font-bold text-2xl mb-8">Legal Policy</h2>
+          <a href="#" class="text-white hover:text-blue-500 mb-3"
+            >Terms & Conditions</a
+          >
+          <a href="#" class="text-white hover:text-blue-500 mb-3"
+            >Privacy Policy</a
+          >
+          <a href="#" class="text-white hover:text-blue-500 mb-3"
+            >Legal Notice</a
+          >
+          <a href="#" class="text-white hover:text-blue-500">Accessibility</a>
+        </div>
+        <div class="flex flex-col">
+          <h2 class="text-white font-bold text-2xl mb-8">Quick Links</h2>
+          <a href="/index.html" class="text-white hover:text-blue-500 mb-3"
+            >Home</a
+          >
+          <a href="/about.html" class="text-white hover:text-blue-500 mb-3"
+            >About</a
+          >
+          <a href="/contact.html" class="text-white hover:text-blue-500 mb-3"
+            >Contact</a
+          >
+          <a href="menu.html" class="text-white hover:text-blue-500"
+            >Menu Prep</a
+          >
+        </div>
+        <div class="flex flex-col">
+          <h2 class="text-white font-bold text-2xl mb-8">Follow Us</h2>
+          <div class="flex items-center">
+            <div>
+              <a
+                href="https://www.facebook.com/profile.php?id=61556736154878"
+                target="_blank"
+              >
+                <button
+                  class="bg-black text-white border border-white shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                  type="button"
+                >
+                  <i class="fa-brands fa-facebook-f"></i>
+                </button>
+              </a>
+
+              <a
+                href="https://www.instagram.com/marcelaskitchenny/"
+                target="_blank"
+              >
+                <button
+                  class="bg-black text-white border border-white shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                  type="button"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col justify-center items-center py-8 px-8 text-white"
+      >
+        <p class="text-sm">© 2024 Marcela's Kitchen. All rights reserved.</p>
+      </div>
+    </section>
+  </body>
+</html>

@@ -43,16 +43,18 @@
 
   <body class="bg-pink-100 text-[#dd8cac] overflow-x-hidden">
     <!--Logo Section-->
+
     <section class="hidden sm:block">
-      <img
-        src="./Jotform/back.png"
-        alt=""
-        class="w-full h-auto sm:mx-auto sm:px-8 sm:py-10 sm:h-[10rem] sm:w-[20rem] object-cover rounded-none"
-      />
+      <a href="./index.html"
+        ><img
+          src="./Jotform/back.png"
+          alt=""
+          class="w-full h-auto sm:mx-auto sm:px-8 sm:py-10 sm:h-[10rem] sm:w-[20rem] object-cover rounded-none"
+      /></a>
     </section>
     <!--Navbar-->
     <section class="mb-6">
-      <header id="headerId" class="px-3 pb-6 z-10 relative">
+      <header id="headerId" class="px-3 py-6 sm:pb-6 sm:py-0 z-10 relative">
         <nav
           id="navId"
           class="grid grid-cols-[1fr_1fr] sm:grid-cols-[1fr] gap-4 items-center justify-between"
@@ -94,7 +96,7 @@
                 <a
                   href="/menu.html"
                   class="hover:text-pink-500 hover:fill-blue-500 text-[#dd8cac] text-lg font-medium block"
-                  >Menu Prep</a
+                  >Meal Prep</a
                 >
               </li>
             </ul>
@@ -174,7 +176,7 @@
             <a
               href="/menu.html"
               class="hover:text-pink-500 hover:fill-blue-500 text-[#dd8cac] text-lg font-medium block"
-              >Menu Prep</a
+              >Meal Prep</a
             >
           </li>
         </ul>
@@ -419,17 +421,12 @@
                 <label class="font-semibold"> Quantity </label>
 
                 <div class="flex items-center sm:py-1">
-                  <button
-                    id="decrease"
-                    class="bg-[#dd8cac] hover:bg-pink-500 text-white rounded-l px-2 sm:px-4 sm:py-1"
-                  >
-                    -
-                  </button>
                   <select
-                    id="quantity2"
-                    class="w-[8rem] sm:w-[15rem] sm:h-[32px] bg-white rounded-none h-[24px] border-y border-[#dd8cac] focus:outline-none focus:border-pink-500"
+                    id="quantity"
+                    class="block p-2 w-[10rem] md:w-[15rem] bg-white border border-[#dd8cac] rounded-md shadow-sm focus:outline-none focus:ring focus:ring-pink-500 focus:border-pink-500"
                   >
                     <option value="" disabled selected>Please Select</option>
+
                     <option value="option1">1</option>
                     <option value="option2">2</option>
                     <option value="option3">3</option>
@@ -450,13 +447,12 @@
                     <option value="option18">18</option>
                     <option value="option19">19</option>
                     <option value="option20">20</option>
+                    <option value="option15">21</option>
+                    <option value="option16">22</option>
+                    <option value="option17">23</option>
+                    <option value="option18">24</option>
+                    <option value="option19">25</option>
                   </select>
-                  <button
-                    id="increase"
-                    class="bg-[#dd8cac] hover:bg-pink-500 text-white rounded-r px-2 sm:px-4 sm:py-1"
-                  >
-                    +
-                  </button>
                 </div>
               </div>
             </div>
@@ -637,21 +633,17 @@
             </div>
             <div class="mt-6 text-center">
               <div
-                class="flex flex-row gap-3 ml-8 sm:ml-8 sm:gap-8 md:ml-0 justify-start md:justify-center"
+                class="flex flex-row gap-3 ml-8 sm:ml-8 sm:gap-8 md:ml-0 items-center justify-start md:justify-center"
               >
-                <label class="font-semibold sm:py-1"> Quantity </label>
-                <div class="flex items-center">
-                  <button
-                    id="decrease"
-                    class="bg-[#dd8cac] hover:bg-pink-500 text-white rounded-l px-2 sm:px-4 sm:py-1"
-                  >
-                    -
-                  </button>
+                <label class="font-semibold"> Quantity </label>
+
+                <div class="flex items-center sm:py-1">
                   <select
-                    id="quantity2"
-                    class="w-[8rem] sm:w-[15rem] sm:h-[32px] bg-white border-y rounded-none h-[24px] border-[#dd8cac] focus:outline-none focus:border-pink-500"
+                    id="quantity"
+                    class="block p-2 w-[10rem] md:w-[15rem] bg-white border border-[#dd8cac] rounded-md shadow-sm focus:outline-none focus:ring focus:ring-pink-500 focus:border-pink-500"
                   >
                     <option value="" disabled selected>Please Select</option>
+
                     <option value="option1">1</option>
                     <option value="option2">2</option>
                     <option value="option3">3</option>
@@ -672,13 +664,12 @@
                     <option value="option18">18</option>
                     <option value="option19">19</option>
                     <option value="option20">20</option>
+                    <option value="option15">21</option>
+                    <option value="option16">22</option>
+                    <option value="option17">23</option>
+                    <option value="option18">24</option>
+                    <option value="option19">25</option>
                   </select>
-                  <button
-                    id="increase"
-                    class="bg-[#dd8cac] hover:bg-pink-500 text-white rounded-r px-2 sm:px-4 sm:py-1"
-                  >
-                    +
-                  </button>
                 </div>
               </div>
             </div>
@@ -859,21 +850,17 @@
             </div>
             <div class="mt-6 text-center">
               <div
-                class="flex flex-row gap-3 ml-8 sm:ml-8 sm:gap-8 md:ml-0 justify-start md:justify-center"
+                class="flex flex-row gap-3 ml-8 sm:ml-8 sm:gap-8 md:ml-0 items-center justify-start md:justify-center"
               >
-                <label class="font-semibold sm:py-1"> Quantity </label>
-                <div class="flex items-center">
-                  <button
-                    id="decrease"
-                    class="bg-[#dd8cac] hover:bg-pink-500 text-white rounded-l px-2 sm:px-4 sm:py-1"
-                  >
-                    -
-                  </button>
+                <label class="font-semibold"> Quantity </label>
+
+                <div class="flex items-center sm:py-1">
                   <select
-                    id="quantity2"
-                    class="w-[8rem] sm:w-[15rem] sm:h-[32px] bg-white border-y border-[#dd8cac] rounded-none h-[24px] focus:outline-none focus:border-pink-500"
+                    id="quantity"
+                    class="block p-2 w-[10rem] md:w-[15rem] bg-white border border-[#dd8cac] rounded-md shadow-sm focus:outline-none focus:ring focus:ring-pink-500 focus:border-pink-500"
                   >
                     <option value="" disabled selected>Please Select</option>
+
                     <option value="option1">1</option>
                     <option value="option2">2</option>
                     <option value="option3">3</option>
@@ -894,13 +881,12 @@
                     <option value="option18">18</option>
                     <option value="option19">19</option>
                     <option value="option20">20</option>
+                    <option value="option15">21</option>
+                    <option value="option16">22</option>
+                    <option value="option17">23</option>
+                    <option value="option18">24</option>
+                    <option value="option19">25</option>
                   </select>
-                  <button
-                    id="increase"
-                    class="bg-[#dd8cac] hover:bg-pink-500 text-white rounded-r px-2 sm:px-4 sm:py-1"
-                  >
-                    +
-                  </button>
                 </div>
               </div>
             </div>
@@ -1080,21 +1066,17 @@
             </div>
             <div class="mt-6 text-center">
               <div
-                class="flex flex-row gap-3 sm:gap-6 ml-8 sm:ml-8 sm:gap-8 md:ml-0 justify-start md:justify-center"
+                class="flex flex-row gap-3 ml-8 sm:ml-8 sm:gap-8 md:ml-0 items-center justify-start md:justify-center"
               >
-                <label class="font-semibold sm:py-1"> Quantity </label>
-                <div class="flex items-center">
-                  <button
-                    id="decrease"
-                    class="bg-[#dd8cac] hover:bg-pink-500 text-white rounded-l px-2 sm:px-4 sm:py-1"
-                  >
-                    -
-                  </button>
+                <label class="font-semibold"> Quantity </label>
+
+                <div class="flex items-center sm:py-1">
                   <select
-                    id="quantity2"
-                    class="w-[8rem] sm:w-[15rem] bg-white border-y border-[#dd8cac] rounded-none h-[24px] sm:h-[32px] focus:outline-none focus:border-pink-500"
+                    id="quantity"
+                    class="block p-2 w-[10rem] md:w-[15rem] bg-white border border-[#dd8cac] rounded-md shadow-sm focus:outline-none focus:ring focus:ring-pink-500 focus:border-pink-500"
                   >
                     <option value="" disabled selected>Please Select</option>
+
                     <option value="option1">1</option>
                     <option value="option2">2</option>
                     <option value="option3">3</option>
@@ -1115,13 +1097,12 @@
                     <option value="option18">18</option>
                     <option value="option19">19</option>
                     <option value="option20">20</option>
+                    <option value="option15">21</option>
+                    <option value="option16">22</option>
+                    <option value="option17">23</option>
+                    <option value="option18">24</option>
+                    <option value="option19">25</option>
                   </select>
-                  <button
-                    id="increase"
-                    class="bg-[#dd8cac] hover:bg-pink-500 text-white rounded-r px-2 sm:px-4 sm:py-1"
-                  >
-                    +
-                  </button>
                 </div>
               </div>
             </div>
@@ -1302,21 +1283,17 @@
             </div>
             <div class="mt-6 text-center">
               <div
-                class="flex flex-row gap-3 ml-8 sm:ml-8 sm:gap-8 md:ml-0 justify-start md:justify-center"
+                class="flex flex-row gap-3 ml-8 sm:ml-8 sm:gap-8 md:ml-0 items-center justify-start md:justify-center"
               >
-                <label class="font-semibold sm:py-1"> Quantity </label>
-                <div class="flex items-center">
-                  <button
-                    id="decrease"
-                    class="bg-[#dd8cac] hover:bg-pink-500 text-white rounded-l px-2 sm:px-4 sm:py-1"
-                  >
-                    -
-                  </button>
+                <label class="font-semibold"> Quantity </label>
+
+                <div class="flex items-center sm:py-1">
                   <select
-                    id="quantity2"
-                    class="w-[8rem] sm:w-[15rem] sm:h-[32px] bg-white border-y border-[#dd8cac] rounded-none h-[24px] focus:outline-none focus:border-pink-500"
+                    id="quantity"
+                    class="block p-2 w-[10rem] md:w-[15rem] bg-white border border-[#dd8cac] rounded-md shadow-sm focus:outline-none focus:ring focus:ring-pink-500 focus:border-pink-500"
                   >
                     <option value="" disabled selected>Please Select</option>
+
                     <option value="option1">1</option>
                     <option value="option2">2</option>
                     <option value="option3">3</option>
@@ -1337,13 +1314,12 @@
                     <option value="option18">18</option>
                     <option value="option19">19</option>
                     <option value="option20">20</option>
+                    <option value="option15">21</option>
+                    <option value="option16">22</option>
+                    <option value="option17">23</option>
+                    <option value="option18">24</option>
+                    <option value="option19">25</option>
                   </select>
-                  <button
-                    id="increase"
-                    class="bg-[#dd8cac] hover:bg-pink-500 text-white rounded-r px-2 sm:py-1 sm:px-4"
-                  >
-                    +
-                  </button>
                 </div>
               </div>
             </div>
@@ -1410,6 +1386,11 @@
                   <option value="option18">18</option>
                   <option value="option19">19</option>
                   <option value="option20">20</option>
+                  <option value="option15">21</option>
+                  <option value="option16">22</option>
+                  <option value="option17">23</option>
+                  <option value="option18">24</option>
+                  <option value="option19">25</option>
                 </select>
               </div>
             </div>
@@ -1465,6 +1446,11 @@
                   <option value="option18">18</option>
                   <option value="option19">19</option>
                   <option value="option20">20</option>
+                  <option value="option15">21</option>
+                  <option value="option16">22</option>
+                  <option value="option17">23</option>
+                  <option value="option18">24</option>
+                  <option value="option19">25</option>
                 </select>
               </div>
             </div>
@@ -1598,13 +1584,14 @@
             <div
               class="flex flex-row ml-4 md:ml-0 gap-3 w-full items-center justify-start"
             >
-              <label for="quantity1" class="font-semibold">Quantity</label>
+              <label for="quantity" class="font-semibold">Quantity</label>
               <div class="flex">
                 <select
-                  id="quantity2"
+                  id="quantity"
                   class="block p-2 w-[10rem] md:w-[15rem] bg-white border border-[#dd8cac] rounded-md shadow-sm focus:outline-none focus:ring focus:ring-pink-500 focus:border-pink-500"
                 >
                   <option value="" disabled selected>Please Select</option>
+
                   <option value="option1">1</option>
                   <option value="option2">2</option>
                   <option value="option3">3</option>
@@ -1625,6 +1612,11 @@
                   <option value="option18">18</option>
                   <option value="option19">19</option>
                   <option value="option20">20</option>
+                  <option value="option15">21</option>
+                  <option value="option16">22</option>
+                  <option value="option17">23</option>
+                  <option value="option18">24</option>
+                  <option value="option19">25</option>
                 </select>
               </div>
             </div>
@@ -1680,13 +1672,14 @@
             <div
               class="flex flex-row ml-4 md:ml-0 gap-3 w-full items-center justify-start"
             >
-              <label for="quantity1" class="font-semibold">Quantity</label>
+              <label for="quantity" class="font-semibold">Quantity</label>
               <div class="flex">
                 <select
-                  id="quantity2"
+                  id="quantity"
                   class="block p-2 w-[10rem] md:w-[15rem] bg-white border border-[#dd8cac] rounded-md shadow-sm focus:outline-none focus:ring focus:ring-pink-500 focus:border-pink-500"
                 >
                   <option value="" disabled selected>Please Select</option>
+
                   <option value="option1">1</option>
                   <option value="option2">2</option>
                   <option value="option3">3</option>
@@ -1707,6 +1700,11 @@
                   <option value="option18">18</option>
                   <option value="option19">19</option>
                   <option value="option20">20</option>
+                  <option value="option15">21</option>
+                  <option value="option16">22</option>
+                  <option value="option17">23</option>
+                  <option value="option18">24</option>
+                  <option value="option19">25</option>
                 </select>
               </div>
             </div>
@@ -1811,10 +1809,10 @@
             <div
               class="flex flex-row ml-4 md:ml-0 gap-3 w-full items-center justify-start"
             >
-              <label for="quantity1" class="font-semibold">Quantity</label>
+              <label for="quantity" class="font-semibold">Quantity</label>
               <div class="flex">
                 <select
-                  id="quantity2"
+                  id="quantity"
                   class="block p-2 w-[10rem] md:w-[15rem] bg-white border border-[#dd8cac] rounded-md shadow-sm focus:outline-none focus:ring focus:ring-pink-500 focus:border-pink-500"
                 >
                   <option value="" disabled selected>Please Select</option>
@@ -1839,6 +1837,11 @@
                   <option value="option18">18</option>
                   <option value="option19">19</option>
                   <option value="option20">20</option>
+                  <option value="option15">21</option>
+                  <option value="option16">22</option>
+                  <option value="option17">23</option>
+                  <option value="option18">24</option>
+                  <option value="option19">25</option>
                 </select>
               </div>
             </div>
@@ -1941,12 +1944,12 @@
             <!--ne-->
 
             <div
-              class="flex flex-row ml-4 md:ml-0 gap-4 w-full items-center justify-start"
+              class="flex flex-row ml-4 md:ml-0 gap-3 w-full items-center justify-start"
             >
-              <label for="quantity1" class="font-semibold">Quantity</label>
+              <label for="quantity" class="font-semibold">Quantity</label>
               <div class="flex">
                 <select
-                  id="quantity2"
+                  id="quantity"
                   class="block p-2 w-[10rem] md:w-[15rem] bg-white border border-[#dd8cac] rounded-md shadow-sm focus:outline-none focus:ring focus:ring-pink-500 focus:border-pink-500"
                 >
                   <option value="" disabled selected>Please Select</option>
@@ -1971,6 +1974,11 @@
                   <option value="option18">18</option>
                   <option value="option19">19</option>
                   <option value="option20">20</option>
+                  <option value="option15">21</option>
+                  <option value="option16">22</option>
+                  <option value="option17">23</option>
+                  <option value="option18">24</option>
+                  <option value="option19">25</option>
                 </select>
               </div>
             </div>
@@ -2037,6 +2045,11 @@
                   <option value="option18">18</option>
                   <option value="option19">19</option>
                   <option value="option20">20</option>
+                  <option value="option15">21</option>
+                  <option value="option16">22</option>
+                  <option value="option17">23</option>
+                  <option value="option18">24</option>
+                  <option value="option19">25</option>
                 </select>
               </div>
             </div>
@@ -2092,6 +2105,11 @@
                   <option value="option18">18</option>
                   <option value="option19">19</option>
                   <option value="option20">20</option>
+                  <option value="option15">21</option>
+                  <option value="option16">22</option>
+                  <option value="option17">23</option>
+                  <option value="option18">24</option>
+                  <option value="option19">25</option>
                 </select>
               </div>
             </div>
@@ -2147,6 +2165,11 @@
                   <option value="option18">18</option>
                   <option value="option19">19</option>
                   <option value="option20">20</option>
+                  <option value="option15">21</option>
+                  <option value="option16">22</option>
+                  <option value="option17">23</option>
+                  <option value="option18">24</option>
+                  <option value="option19">25</option>
                 </select>
               </div>
             </div>
@@ -2593,7 +2616,7 @@
             >Contact</a
           >
           <a href="menu.html" class="text-[#dd8cac] hover:text-pink-500"
-            >Menu Prep</a
+            >Meal Prep</a
           >
         </div>
         <div class="flex flex-col">
